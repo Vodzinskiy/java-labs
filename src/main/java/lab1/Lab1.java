@@ -1,11 +1,11 @@
-package labs.lab1;
+package lab1;
 
 /*
 Залікова - 0402
 С2 = 0 -> +
 C3 = 0
-C5 -> 2 -> %
-C7 -> 3 -> long
+C5 = 2 -> %
+C7 = 3 -> long
  */
 
 public class Lab1 {
