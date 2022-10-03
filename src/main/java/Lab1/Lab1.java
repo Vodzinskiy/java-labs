@@ -1,4 +1,4 @@
-package lab1;
+package Lab1;
 
 /*
 Залікова - 0402
@@ -10,14 +10,14 @@ C7 = 3 -> long
 
 public class Lab1 {
     public static void main(String[] args) {
-        byte c = 0;
-        double res = 0;
+        final byte c = 0;
 
-        long a = 1, b = 1, n = 3, m = 3;
+        long a = 1, b = 1, n = 4, m = 3;
 
-        if (a <= c && c <= n || b <= 0 && 0 <= m) System.out.println("Division by zero");
+        if (a <= -c && -c <= n || b <= 0 && 0 <= m) System.out.println("Division by zero");
 
         else {
+            double res = 0;
             for (long i = a; i <= n; i++) {
                 for (long j = b; j <= m; j++) {
                     res += (double) (i % j) / (i + c);
