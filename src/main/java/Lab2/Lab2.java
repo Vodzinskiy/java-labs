@@ -21,12 +21,12 @@ public class Lab2 {
         int[][] B = {{9,4,3,1},
                      {2,7,3,2},
                      {1,4,6,7}};
-
+        //checking matrices for equality              
         if(A.length == 0 || B.length == 0 || A.length != B.length || A[0].length != B[0].length){
             System.out.println("Matrices A and B have different sizes");
             return;
         }
-
+        //check matrices for squareness
         for (int[] ints : A) {
             if (A[0].length != ints.length) {
                 System.out.println("Matrix A isn't rectangular");
@@ -40,6 +40,7 @@ public class Lab2 {
 
         //create matrix C
         int[][] C = new int[A.length][A[0].length];
+        //matrix addition and matrix C printing
         System.out.println("Matrix C:");
         for (int i = 0; i < A.length; i++){
             for (int j = 0; j < A[0].length;j++) {
@@ -48,7 +49,8 @@ public class Lab2 {
             }
             System.out.println();
         }
-
+        
+        //sum of the largest elements in the matrix columns with even numbers and the smallest elements in the matrix columns with odd numbers
         int sumMaxElement = 0;
         int sumMinElement = 0;
 
