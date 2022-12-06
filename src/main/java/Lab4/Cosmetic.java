@@ -1,11 +1,11 @@
 package Lab4;
 
 public class Cosmetic {
-    private final String name;
-    private final String brand;
-    private final String color;
-    private final int mass;
-    private final int price;
+    private String name;
+    private String brand;
+    private String color;
+    private int mass;
+    private int price;
 
     public Cosmetic(String name, String brand, String color, int mass, int price) {
         this.name = name;
